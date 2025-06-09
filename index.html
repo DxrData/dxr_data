@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DXR VLA</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="./static/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+        .author-block {
+            display: none;
+        }
+
+        .publication-authors:hover .author-block {
+            display: block;
+        }
+
+        /* 更贴边的容器 */
+        .custom-container {
+            width: 85%;
+            padding-left: 1.5vw;
+            padding-right: 1.5vw;
+            box-sizing: border-box;
+        }
+
+        /* 可选：移除 Bulma 默认的 .container 最大宽度限制 */
+        .container {
+            max-width: none !important;
+            width: 85% !important;
+        }
+    </style>
+</head>
+
+
+<body>
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">帝蛮神<br>人工智能数据</h1>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="team-name"><b>帝蛮神 人工智能团队 <p style="font-size: 70%">(hover to display full author list)</p></b></span>
+                            <span class="author-block">
+                                张三，李四，王五，赵六，钱七，孙八，周九，吴十，郑十一，冯十二，陈十三，褚十四，卫十五，蒋十六，沈十七，韩十八，杨十九，朱二十，秦二十一，尤二十二，许二十三，何二十四，吕二十五，施二十六，张二十七，孔二十八，曹二十九，严三十
+                                <!-- 上海机器人研究所骨干团队、上海大学、交通大学、日本东京工业大学、大阪大学、清华大学中日创新中心、日刊工业新闻社、上海市研发公共服务平台管理中心、长三角国家技术创新中心、南翔政府、嘉定联创中心、帝蛮神 -->
+                                <br>
+                                <span class="is-size-6"><sup>*</sup>Co-Lead</span>
+                            </span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <img src="figures/droid_logos.jpeg" class="interpolation-image" alt="" style="display: block; width: 100%; margin-left: auto; margin-right: auto" />
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+
+                                <span class="link-block">
+                                    <!-- <a target="_blank" href="https://tse1.mm.bing.net/th/id/OIP.u2aY-QUkb_Q_s1IZylWp1gHaE7?rs=1&pid=ImgDetMain"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span><b>PDF</b></span>
+                                    </a> -->
+                                    <a target="_blank" href="https://github.com/DxrData/data" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-database"></i>
+                                        </span>
+                                        <span><b>数据浏览</b></span>
+                                    </a>
+
+                                    <!-- <a target="_blank" href=https://tse1.mm.bing.net/th/id/OIP.u2aY-QUkb_Q_s1IZylWp1gHaE7?rs=1&pid=ImgDetMain"
+                                    class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="fas fa-database"></i>
+                                    </span>
+                                    <span><b>数据 Colab</b></span>
+                                    </a> -->
+
+
+                                    <!-- <a target="_blank" href="https://tse1.mm.bing.net/th/id/OIP.u2aY-QUkb_Q_s1IZylWp1gHaE7?rs=1&pid=ImgDetMain"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span><b>安装指导</b></span>
+                                    </a> -->
+
+
+                                    <!-- <a target="_blank" href="https://tse1.mm.bing.net/th/id/OIP.u2aY-QUkb_Q_s1IZylWp1gHaE7?rs=1&pid=ImgDetMain"
+                                    class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span><b>硬件编码</b></span>
+                                    </a> -->
+
+                                    <a target="_blank" href="https://github.com/DxrData/data" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-cloud"></i>
+                                        </span>
+                                        <span><b>百度网盘</b></span>
+                                    </a>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="margin-top: -100px;">
+        <div class="container is-max-desktop">
+            <!-- Abstract. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column">
+                    <!-- <h2 class="title is-3">xxx训练场介绍</h2> -->
+                    <div class="content has-text-justified" style="margin-bottom: 10px;">
+                        <p style="font-size: 125%; text-indent: 2em;">
+                            在具身智能的快速发展浪潮中，高质量、多模态的机器人数据集成为推动技术创新和应用落地的关键基石。我们打造了一个全球领先机器人数据集平台，涵盖操作、移动与交互三大核心领域，全面支持机器人在复杂真实环境中的感知与决策能力。操作类数据集为机器人系统提供了关节角度、力觉反馈及视觉深度信息等多维动态数据，这些数据是实现高精度与柔性操作的关键。在具身智能领域，这些数据集通过多模态感知融合，增强了机器人的具身认知能力，使其能够更全面地理解环境并做出适应性动作。具身智能强调机器人的身体与环境的交互，通过感知与动作的紧密结合，机器人可以更好地进行运动规划、模仿学习和强化学习。移动类数据集融合激光雷达点云、视觉传感、惯性测量和定位轨迹，覆盖从室内工业车间到复杂户外道路的多样化导航场景，为同步定位与建图（SLAM）、多传感器融合、动态障碍识别和路径优化等关键技术提供真实、高质量的数据基础，显著提升机器人自主导航的鲁棒性和适应性。交互类数据集则聚焦于机器人与人类及环境之间的智能交流，融合语音识别、自然语言理解、视觉目标检测、多模态对话和情绪感知等多样交互信息，推动服务机器人在家庭护理、医疗辅助、教育和接待等场景中实现自然、流畅且智能化的人机协作。所有数据均来自丰富的现实应用场景，经过严格标注和质量控制，支持多种标准数据格式和主流开发框架，便于研究人员和工程师快速集成与应用。无论您致力于提升机器人操作精度，还是优化导航策略，或打造智能交互体验，我们的数据集都将成为您创新研发的重要驱动力，携手全球开发者共创具身智能的未来，助力机器人技术迈向更高水平的智能化与实用化。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="carousel-container" style="position: relative; width: 100%; overflow: hidden; padding: 20px 0; text-align: center;margin-top: -30px;">
+                <button class="carousel-arrow left" style="position:absolute; top:50%; left:10px; transform:translateY(-50%); font-size:30px; background:rgba(0,0,0,0.3); color:#fff; border:none; cursor:pointer; padding:10px; z-index:10;" onclick="prevSlide()">‹</button>
+                <button class="carousel-arrow right" style="position:absolute; top:50%; right:10px; transform:translateY(-50%); font-size:30px; background:rgba(0,0,0,0.3); color:#fff; border:none; cursor:pointer; padding:10px; z-index:10;" onclick="nextSlide()">›</button>
+    
+                <div id="carousel" style="display: flex; justify-content: center; align-items: center; gap: 60px;"> <!-- 改变左右间距大小 -->
+                    <img id="img-prev" class="carousel-img" style="width: 30%; opacity: 0.6; transition: all 0.5s;">
+                    <img id="img-current" class="carousel-img" style="width: 40%; transform: scale(1.05); box-shadow: 0 0 10px rgba(0,0,0,0.2); transition: all 0.5s;">
+                    <img id="img-next" class="carousel-img" style="width: 30%; opacity: 0.6; transition: all 0.5s;">
+                </div>
+    
+                <div id="carousel-dots" style="margin-top: 50px;"></div>
+            </div>
+    
+            <script>
+                const images = [
+                    "figures/首页/1.jpg",
+                    "figures/首页/2.jpg",
+                    "figures/首页/3.jpg",
+                    "figures/首页/4.jpg",
+                    "figures/首页/5.jpg",
+                    "figures/首页/6.jpg",
+                    "figures/首页/7.jpg",
+                    "figures/首页/8.jpg",
+                    "figures/首页/9.jpg",
+                    "figures/首页/10.jpg",
+                    "figures/首页/11.jpg",
+                    "figures/首页/12.jpg",
+                    "figures/首页/13.jpg",
+                ];
+    
+                let currentIndex = 0;
+    
+                const imgPrev = document.getElementById("img-prev");
+                const imgCurrent = document.getElementById("img-current");
+                const imgNext = document.getElementById("img-next");
+                const dotsContainer = document.getElementById("carousel-dots");
+    
+                let intervalId = null;
+    
+                function preloadImages() {
+                    images.forEach(src => {
+                        const img = new Image();
+                        img.src = src;
+                    });
+                }
+    
+                function updateCarousel() {
+                    const prevIndex = (currentIndex - 1 + images.length) % images.length;
+                    const nextIndex = (currentIndex + 1) % images.length;
+    
+                    // 只替换 src，DOM 元素不变，减少闪烁
+                    imgPrev.src = images[prevIndex];
+                    imgCurrent.src = images[currentIndex];
+                    imgNext.src = images[nextIndex];
+    
+                    updateDots();
+                }
+    
+                function updateDots() {
+                    dotsContainer.innerHTML = "";
+                    images.forEach((_, idx) => {
+                        const dot = document.createElement("span");
+                        dot.style = "display:inline-block; width:10px; height:10px; margin:5px; border-radius:50%; background:#ccc; cursor:pointer;";
+                        if (idx === currentIndex) dot.style.background = "#333";
+                        dot.onclick = () => {
+                            currentIndex = idx;
+                            updateCarousel();
+                            restartInterval();
+                        };
+                        dotsContainer.appendChild(dot);
+                    });
+                }
+    
+                function nextSlide() {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    updateCarousel();
+                    restartInterval();
+                }
+    
+                function prevSlide() {
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                    updateCarousel();
+                    restartInterval();
+                }
+    
+                function restartInterval() {
+                    clearInterval(intervalId);
+                    intervalId = setInterval(nextSlide, 1000); // 修改播放间隔
+                }
+    
+                // 鼠标悬停暂停自动播放
+                document.getElementById("carousel-container").addEventListener("mouseenter", () => clearInterval(intervalId));
+                document.getElementById("carousel-container").addEventListener("mouseleave", () => restartInterval());
+    
+                preloadImages();
+                updateCarousel();
+                intervalId = setInterval(nextSlide, 1000);
+            </script>
+            <p style="text-align: center; margin-top: -20px;">数据采集机器人本体类型</p>
+    
+        </div>
+    </section>
+    <!-- 操作类 -->
+    <section class="section" style="margin-top: -100px;">
+        <div class="container is-max-widescreen">
+            <div class="rows">
+                <div class="rows is-centered">
+                    <style>
+                        .dvima {
+                            font-size: inherit;
+                            color: inherit;
+                            text-decoration: none;
+                            transition: color 0.3s;
+                        }
+
+                        .dvima:hover {
+                            color: #007bff;
+                            /* 蓝色 */
+                        }
+                    </style>
+
+                    <!-- <div class="row is-full-width">
+                        <h2 class="title is-2">
+                            <a href="https://github.com/DxrData/data/tree/main/vla" target="_blank" class="dvima">
+                                操作类介绍
+                            </a>
+                        </h2>
+                    </div> -->
+                    <div class="row is-full-width">
+                        <h2 class="title is-2" style="margin-bottom: 20px;">
+                            <a href="https://github.com/DxrData/data/tree/main/vla" target="_blank" class="dvima" style="text-decoration: underline; color: #007bff;">
+                                操作类
+                            </a>
+                        </h2>
+                    </div>
+
+                    <div class="columns is-centered has-text-centered">
+                        <div class="column">
+                            <!-- <h2 class="title is-3">xxx训练场介绍</h2> -->
+                            <div class="content has-text-justified" style="margin-bottom: -20px;">
+                                <p style="font-size: 125%; text-indent: 2em;">
+                                    操作类数据集是支撑机器人操作智能发展的核心资源，专注于记录机器人在抓取、放置、路径调整、物体操控等任务中的真实行为与环境响应。数据集融合了视觉图像、深度信息、关节角度、末端轨迹、力觉反馈等多模态数据，具备高时序精度与结构一致性，广泛服务于运动建模、模仿学习、强化学习、动态路径规划、视觉伺服控制、力-位混合控制等关键技术方向。它适用于工业自动化装配、智能仓储拣选、实验室自动操作、医疗辅助器械控制、柔性制造及家用服务机器人等多元场景，覆盖刚性与柔性物体处理、多物体协作、动态障碍规避等复杂任务。数据集的设计强调现实性与通用性，为算法训练、系统验证与策略优化提供了坚实的数据支撑，加速机器人从规则驱动向学习驱动的技术演进，推动具身智能在多领域落地应用。在具身智能的框架下，这些数据集通过多模态感知融合，强化了机器人的具身认知与环境交互能力，使其能够更好地适应复杂多变的现实任务，实现更高效、更自然的人机协作与交互。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 视频展示区域 -->
+                    <div class="columns">
+                        <div class="column" style="display: flex; flex-direction: column; align-items: center;">
+                            <video controls style="width: 50%; height: auto;">
+                                <source src="videos/Operation/机械臂2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p style="text-align: center; margin-top: 10px;">单-双运动规划数据采集</p>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <video controls style="width: 100%; height: auto;">
+                                <source src="videos/Operation/双臂1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p style="text-align: center; margin-top: 10px;">双臂稳定放置姿态数据采集</p>
+                        </div>
+                        <div class="column">
+                            <video controls style="width: 100%; height: auto;">
+                                <source src="videos/Operation/清洗机器人.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p style="text-align: center; margin-top: 10px;">单臂清洗数据采集</p>
+                        </div>
+                        <div class="column">
+                            <video controls style="width: 100%; height: auto;">
+                                <source src="videos/Operation/双臂排爆机器人.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p style="text-align: center; margin-top: 10px;">双臂协同数据采集</p>
+                        </div>
+                    </div>
+                    <!-- <div class="columns">
+                        <div class="column">
+                            <video controls style="width: 100%; height: auto;">
+                                <source src="videos/Interaction/安全帽检测1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p style="text-align: center; margin-top: 10px;">安全帽</p>
+                        </div>
+                        <div class="column">
+                            <video controls style="width: 100%; height: auto;">
+                                <source src="videos/Interaction/20240313指针表.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p style="text-align: center; margin-top: 10px;">指针表</p>
+                        </div>
+                        <div class="column">
+                            <video controls style="width: 100%; height: auto;">
+                                <source src="videos/Interaction/34积水.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p style="text-align: center; margin-top: 10px;">积水</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 移动类 -->
+    <section class="section" style="margin-top: -50px;">
+        <div class="container is-max-widescreen">
+            <div class="rows">
+                <div class="rows is-centered">
+                    <style>
+                        .dvima {
+                            font-size: inherit;
+                            color: inherit;
+                            text-decoration: none;
+                            transition: color 0.3s;
+                        }
+
+                        .dvima:hover {
+                            color: #007bff;
+                            /* 蓝色 */
+                        }
+                    </style>
+
+                    <div class="row is-full-width">
+                        <h2 class="title is-2"  style="margin-bottom: 20px;">
+                            <a href="https://github.com/DxrData/data/tree/main/vla" target="_blank" class="dvima" style="text-decoration: underline; color: #007bff;">
+                                移动类
+                            </a>
+                        </h2>
+                    </div>
+
+                    <div class="columns is-centered has-text-centered">
+                        <div class="column">
+                            <!-- <h2 class="title is-3">xxx训练场介绍</h2> -->
+                            <div class="content has-text-justified" style="margin-bottom: -20px;">
+                                <p style="font-size: 125%; text-indent: 2em;">
+                                    移动类数据集是赋能机器人自主导航与环境感知的关键基础，覆盖从室内工厂到户外城市的多样化真实场景，支持路径规划、同步定位与建图（SLAM）、动态避障与传感器融合等核心任务。数据内容涵盖激光雷达点云、视觉图像、深度信息、惯性测量、GPS轨迹等多源信息，为构建高精度、高鲁棒性的导航系统提供全面支持。技术方向上，移动类数据集广泛应用于多传感器融合定位、动态环境理解、局部与全局路径优化、语义地图构建、障碍物识别与跟踪等，适用于多种导航策略与学习模型的开发。应用层面涵盖无人配送机器人、工业移动平台、安防巡检机器人、自动驾驶车辆等场景，涉及狭窄通道、复杂地形、多变光照与高动态干扰等现实挑战。数据集采用标准格式，便于集成到主流机器人开发框架，支持快速实验验证与系统部署，是构建智能移动机器人不可或缺的技术资源。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 视频展示区域 -->
+                    <!-- <div class="columns">
+                        <div class="column" style="display: flex; flex-direction: column; align-items: center;">
+                            <video controls style="width: 50%; height: auto;">
+                                <source src="videos/Interaction/行人识别.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p style="text-align: center; margin-top: 10px;">行人</p>
+                        </div>
+                    </div> -->
+                    <div class="columns">
+                        <div class="column">
+                            <video controls style="width: 100%; height: auto;">
+                                <source src="videos/Move/建图.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p style="text-align: center; margin-top: 10px;">实时建图数据采集</p>
+                        </div>
+                        <div class="column">
+                            <video controls style="width: 100%; height: auto;">
+                                <source src="videos/Move/建图2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p style="text-align: center; margin-top: 10px;">街道数据采集</p>
+                        </div>
+                        <!-- <div class="column">
+                            <video controls style="width: 100%; height: auto;">
+                                <source src="videos/Interaction/消防栓漏水.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p style="text-align: center; margin-top: 10px;">消防栓漏水</p>
+                        </div> -->
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <video controls style="width: 100%; height: auto;">
+                                <source src="videos/Move/下楼梯.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p style="text-align: center; margin-top: 10px;">下楼梯数据采集</p>
+                        </div>
+                        <div class="column">
+                            <video controls style="width: 100%; height: auto;">
+                                <source src="videos/Move/复杂曲率攀爬机器人/复杂曲率攀爬机器人-2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p style="text-align: center; margin-top: 10px;">复杂曲率攀爬数据采集</p>
+                        </div>
+                        <div class="column">
+                            <video controls style="width: 100%; height: auto;">
+                                <source src="videos/Move/变管径内壁维护机器人/变管径内壁维护机器人-1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p style="text-align: center; margin-top: 10px;">管径维护数据采集</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 交互 -->
+    <section class="section" style="margin-top: -50px;">
+        <div class="container is-max-widescreen">
+            <div class="rows">
+                <div class="rows is-centered">
+                    <style>
+                        .dvima {
+                            font-size: inherit;
+                            color: inherit;
+                            text-decoration: none;
+                            transition: color 0.3s;
+                        }
+
+                        .dvima:hover {
+                            color: #007bff;
+                            /* 蓝色 */
+                        }
+                    </style>
+
+                    <div class="row is-full-width">
+                        <h2 class="title is-2"  style="margin-bottom: 20px;">
+                            <a href="https://github.com/DxrData/data/tree/main/vla" target="_blank" class="dvima" style="text-decoration: underline; color: #007bff;">
+                                交互类
+                            </a>
+                        </h2>
+                    </div>
+
+                    <div class="columns is-centered has-text-centered">
+                        <div class="column">
+                            <!-- <h2 class="title is-3">xxx训练场介绍</h2> -->
+                            <div class="content has-text-justified" style="margin-bottom: -20px;">
+                                <p style="font-size: 125%; text-indent: 2em;">
+                                    交互类数据集是构建机器人感知环境、理解语言与实现人机协作的关键基础，涵盖语音识别与合成、视觉感知、语言理解、语义匹配以及多模态融合等多个技术方向。数据集融合图像、音频、文本与行为标签，支持机器人对人类语音指令、视觉目标和交互意图的精准解析，助力开发自然流畅的智能交互系统。其技术应用包括语音唤醒与指令识别、情绪识别、多模态对话系统、物体识别与跟随、手势与动作理解等，适用于多轮交互与上下文感知任务。在应用层面，该类数据广泛服务于家庭陪护、医疗辅助、教育助理、接待引导等场景，满足机器人在开放环境下对话响应、情境识别与任务执行的能力需求。数据格式兼容主流AI开发框架，支持模型训练、微调与系统集成，为打造具有人性化、情境感知与主动协作能力的智能机器人提供坚实支撑，是推动人机融合与交互智能演进的重要资源。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 视频展示区域 -->
+                    <div class="columns">
+                        <div class="column">
+                            <video controls style="width: 100%; height: auto;">
+                                <source src="videos/Interaction/烟火剪辑版本.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p style="text-align: center; margin-top: 10px;">烟火数据采集（效果）</p>
+                        </div>
+                        <div class="column">
+                            <video controls style="width: 100%; height: auto;">
+                                <source src="videos/Interaction/手势识别.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p style="text-align: center; margin-top: 10px;">手势数据采集（效果）</p>
+                        </div>
+                        <div class="column">
+                            <video controls style="width: 100%; height: auto;">
+                                <source src="videos/Interaction/消防栓漏水.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p style="text-align: center; margin-top: 10px;">消防栓漏水数据采集（效果）</p>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <video controls style="width: 100%; height: auto;">
+                                <source src="videos/Interaction/安全帽检测1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p style="text-align: center; margin-top: 10px;">安全帽数据采集（效果）</p>
+                        </div>
+                        <div class="column">
+                            <video controls style="width: 100%; height: auto;">
+                                <source src="videos/Interaction/20240313指针表.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p style="text-align: center; margin-top: 10px;">指针表数据采集（效果）</p>
+                        </div>
+                        <div class="column">
+                            <video controls style="width: 100%; height: auto;">
+                                <source src="videos/Interaction/34积水.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p style="text-align: center; margin-top: 10px;">积水数据采集（效果）</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

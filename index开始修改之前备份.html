@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DXR VLA</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="./static/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .author-block {
+            display: none;
+        }
+
+        .publication-authors:hover .author-block {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">帝蛮神<br>具身智能训练场</h1>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="team-name"><b>帝蛮神    VLA团队 <p style="font-size: 70%">(hover to display full author list)</p></b></span>
+                            <span class="author-block">
+                                张三，李四，王五，赵六，钱七，孙八，周九，吴十，郑十一，冯十二，陈十三，褚十四，卫十五，蒋十六，沈十七，韩十八，杨十九，朱二十，秦二十一，尤二十二，许二十三，何二十四，吕二十五，施二十六，张二十七，孔二十八，曹二十九，严三十
+                                <!-- 上海机器人研究所骨干团队、上海大学、交通大学、日本东京工业大学、大阪大学、清华大学中日创新中心、日刊工业新闻社、上海市研发公共服务平台管理中心、长三角国家技术创新中心、南翔政府、嘉定联创中心、帝蛮神 -->
+                                <br>
+                                <span class="is-size-6"><sup>*</sup>Co-Lead</span>
+                            </span>
+                        </div>
+
+                       <div class="column has-text-centered">
+                            <img src="figures/droid_logos.jpeg" class="interpolation-image" alt=""
+                            style="display: block; width: 100%; margin-left: auto; margin-right: auto" />
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+
+                                <span class="link-block">
+                                    <!-- <a target="_blank" href="https://tse1.mm.bing.net/th/id/OIP.u2aY-QUkb_Q_s1IZylWp1gHaE7?rs=1&pid=ImgDetMain"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span><b>PDF</b></span>
+                                    </a> -->
+                                    <a target="_blank" href="https://github.com/DxrData/data"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-database"></i>
+                                        </span>
+                                        <span><b>数据浏览</b></span>
+                                    </a>
+
+                                    <!-- <a target="_blank" href=https://tse1.mm.bing.net/th/id/OIP.u2aY-QUkb_Q_s1IZylWp1gHaE7?rs=1&pid=ImgDetMain"
+                                    class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="fas fa-database"></i>
+                                    </span>
+                                    <span><b>数据 Colab</b></span>
+                                    </a> -->
+
+
+                                    <!-- <a target="_blank" href="https://tse1.mm.bing.net/th/id/OIP.u2aY-QUkb_Q_s1IZylWp1gHaE7?rs=1&pid=ImgDetMain"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span><b>安装指导</b></span>
+                                    </a> -->
+
+
+                                    <!-- <a target="_blank" href="https://tse1.mm.bing.net/th/id/OIP.u2aY-QUkb_Q_s1IZylWp1gHaE7?rs=1&pid=ImgDetMain"
+                                    class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span><b>硬件编码</b></span>
+                                    </a> -->
+
+                                    <a target="_blank" href="https://github.com/DxrData/data"
+                                    class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="fas fa-cloud"></i>
+                                    </span>
+                                    <span><b>百度网盘</b></span>
+                                    </a>
+                                </span>
+                            </div> 
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 视频1 -->
+    <!-- <section class="section" style="padding: 0">
+        <div class="container is-max-desktop">
+            <div>
+                <video poster="" id="" autoplay controls muted loop width="100%" playbackRate=2.0 style="border-radius: 5px;">
+                    <source src="videos/xarm_demo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding: 0">
+        <div class="container is-max-desktop" style="position: relative; overflow: hidden;">
+            <div class="arrow left" onclick="prevSlide()" style="
+                position: absolute;
+                top: 50%;
+                left: -30px;
+                transform: translateY(-50%);
+                font-size: 40px;
+                background: rgba(255,255,255,0.6);
+                border-radius: 50%;
+                padding: 10px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                z-index: 10;
+            " onmouseover="this.style.background='rgba(100,100,255,0.8)'" onmouseout="this.style.background='rgba(255,255,255,0.6)'">&#8592;</div>
+    
+            <div class="arrow right" onclick="nextSlide()" style="
+                position: absolute;
+                top: 50%;
+                right: -30px;
+                transform: translateY(-50%);
+                font-size: 40px;
+                background: rgba(255,255,255,0.6);
+                border-radius: 50%;
+                padding: 10px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                z-index: 10;
+            " onmouseover="this.style.background='rgba(100,100,255,0.8)'" onmouseout="this.style.background='rgba(255,255,255,0.6)'">&#8594;</div>
+    
+            <div id="video-carousel" style="display: flex; flex-wrap: nowrap;">
+                <div class="video-item" style="flex: 1; padding: 5px;"><video src="videos/xarm_demo.mp4" autoplay muted loop controls style="width: 100%; border-radius: 5px;"></video></div>
+                <div class="video-item" style="flex: 1; padding: 5px;"><video src="videos/xarm_demo.mp4" autoplay muted loop controls style="width: 100%; border-radius: 5px;"></video></div>
+                <div class="video-item" style="flex: 1; padding: 5px;"><video src="videos/xarm_demo.mp4" autoplay muted loop controls style="width: 100%; border-radius: 5px;"></video></div>
+                <div class="video-item" style="flex: 1; padding: 5px;"><video src="videos/xarm_demo.mp4" autoplay muted loop controls style="width: 100%; border-radius: 5px;"></video></div>
+                <div class="video-item" style="flex: 1; padding: 5px;"><video src="videos/xarm_demo.mp4" autoplay muted loop controls style="width: 100%; border-radius: 5px;"></video></div>
+                <div class="video-item" style="flex: 1; padding: 5px;"><video src="videos/xarm_demo.mp4" autoplay muted loop controls style="width: 100%; border-radius: 5px;"></video></div>
+                <div class="video-item" style="flex: 1; padding: 5px;"><video src="videos/xarm_demo.mp4" autoplay muted loop controls style="width: 100%; border-radius: 5px;"></video></div>
+                <div class="video-item" style="flex: 1; padding: 5px;"><video src="videos/xarm_demo.mp4" autoplay muted loop controls style="width: 100%; border-radius: 5px;"></video></div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        const videos = Array.from(document.querySelectorAll('#video-carousel .video-item'));
+        let currentIndex = 0;
+        const total = videos.length;
+    
+        function updateVideos() {
+            videos.forEach((video, index) => {
+                video.style.display = 'none';
+            });
+            for (let i = 0; i < 3; i++) {
+                let idx = (currentIndex + i) % total;
+                videos[idx].style.display = 'block';
+            }
+        }
+    
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + total) % total;
+            updateVideos();
+        }
+    
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % total;
+            updateVideos();
+        }
+    
+        updateVideos();
+    </script> -->
+    <!-- 视频1 -->
+
+
+    <!-- <br>
+    <br>
+    <div class="container is-max-widescreen">
+        <h1><b>Getting Started</b></h1>
+        <div class="columns">
+            <div class="column has-text-centered">
+                <a href="visualizer">
+                <p style="font-size: 200%"><b>Interactive Dataset Visualizer <br> </b></p>
+                </a>
+                <video poster="" id="" autoplay controls muted loop height="50%" playbackRate=2.0 style="border-radius: 5px;">
+       
+                    <source src="videos/dataset-visualizer.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="column">
+                <p class="center-text" style="font-size: 200%"><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    Dataset Quickstart </b>
+                    <a href="https://colab.research.google.com/drive/1b4PPH4XGht4Jve2xPKMCh-AXXAQziNQa?usp=sharing"> 
+                        <b>(Colab) </b>
+                        </a>
+                </p>
+                <pre><code>import tensorflow_datasets as tfds     
+
+ds = tfds.load("dxrdata", 
+&nbsp;&nbsp;&nbsp;&nbsp;data_dir="gs://gresearch/robotics", split="train")
+
+for episode in ds.take(5):
+&nbsp;&nbsp;&nbsp;&nbsp;for step in episode["steps"]:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image = step["observation"]["exterior_image_1_left"]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wrist_image = step["observation"]["wrist_image_left"]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;action = step["action"]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instruction = step["language_instruction"]</code></pre>
+              </div>
+        </div>  
+    </div>
+        <br>
+        <br>
+    </div> -->
+    <!-- <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column">
+                    <h2 class="title is-3">xxx训练场介绍</h2>
+                    <div class="content has-text-justified">
+                        <p style="font-size: 125%">
+                            人工智能训练场地是专为AI技术研发而设计的多功能空间。场地配备了先进的计算设备、高速网络和丰富的数据资源，支持深度学习、机器学习等算法的训练与优化。场地还设有模拟真实场景的测试区，涵盖自动驾驶、智能安防、医疗影像等领域，为AI模型提供多样化的训练环境。此外，场地提供数据标注、模型验证等一站式服务，助力AI技术从实验室走向实际应用，推动智能化发展。
+                        </p>
+                    </div>
+                    <div class="column has-text-centered">
+                        <img src="figures/训练场地4.png" class="interpolation-image" alt=""
+                        style="display: block; width: 100%; margin-left: auto; margin-right: auto" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Abstract. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column">
+                    <h2 class="title is-3">xxx训练场介绍</h2>
+                    <div class="content has-text-justified">
+                        <p style="font-size: 125%">
+                            人工智能训练场地是专为AI技术研发而设计的多功能空间。场地配备了先进的计算设备、高速网络和丰富的数据资源，支持深度学习、机器学习等算法的训练与优化。场地还设有模拟真实场景的测试区，涵盖自动驾驶、智能安防、医疗影像等领域，为AI模型提供多样化的训练环境。此外，场地提供数据标注、模型验证等一站式服务，助力AI技术从实验室走向实际应用，推动智能化发展。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container is-max-desktop">
+                <div>
+                    <video poster="" id="" autoplay controls muted loop width="100%" playbackRate=2.0 style="border-radius: 5px;">
+                        <source src="videos/xarm_demo.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <!-- 并排显示-左右 -->
+            <!-- <div class="columns is-centered">
+                <div class="column is-half-desktop">
+                    <img src="figures/202505平面图.png" class="interpolation-image" alt=""
+                        style="display: block; width: 100%; margin-left: auto; margin-right: auto" />
+                </div>
+                <div class="column is-half-desktop">
+                    <img src="figures/202505建设内容.png" class="interpolation-image" alt=""
+                        style="display: block; width: 100%; margin-left: auto; margin-right: auto" />
+                </div>
+            </div> -->
+            <!-- 并排显示-左右 -->
+            
+            <!-- 上下显示 -->
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div>
+                    <img src="figures/202505平面图.png" class="interpolation-image" alt=""
+                        style="display: block; width: 100%; margin: 20px auto;" />
+                </div>
+                <div>
+                    <img src="figures/202505建设内容.png" class="interpolation-image" alt=""
+                        style="display: block; width: 100%; margin: 20px auto;" />
+                </div>
+            </div>
+            <!-- 上下显示 -->
+            
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-widescreen">
+            <div class="rows">
+                <div class="rows is-centered">
+                    <div class="row is-full-width">
+                        <h2 class="title is-2">
+                            <a href="https://github.com/DxrData/dxr_vla.git" target="_blank" class="dvima" style="font-size: inherit; color: inherit; text-decoration: none;">
+                                具身智能训练场数据采集 <i class="fas fa-link" style="font-size: 16px; color: #007bff;"></i>
+                            </a>
+                        </h2>
+                    </div>
+                    <br>
+                    <div class="columns">
+                        <div class="column has-text-centered">
+                            <img src="figures/202505人形.png" class="interpolation-image" alt=""
+                            style="display: block; width: 80%; margin-left: auto; margin-right: auto" />
+                        </div>    
+                        <div class="column has-text-centered">
+                            <span style="font-size: 140%">
+                                具身智能数据采集通过多模态传感器收集机器人与环境交互的视觉、触觉、听觉等信息，涵盖家庭、工业、医疗等场景。采集的数据需经过清洗、标注和融合处理，以支持模型训练和算法优化。高质量的数据采集是提升具身智能感知和决策能力的关键，为机器人在复杂环境中的自主操作提供基础支持。
+                            </span>
+                        </div>
+                    </div>
+                <!-- 视频展示区域 -->
+                <div class="columns">
+                    <div class="column">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="videos/xarm_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="column">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="videos/xarm_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="column">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="videos/xarm_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="videos/xarm_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="column">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="videos/xarm_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="column">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="videos/xarm_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="rows" style="margin-top: -0.5rem; margin-bottom: -0.5rem;">
+                    <div class="columns is-multiline">
+                        <div class="column is-full" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
+                            <a href="https://github.com/your_github_repo" target="_blank">GitHub 下载</a>
+                        </div>
+                        <div class="column is-full" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
+                            <a href="https://pan.baidu.com/your_baidu_pan_link" target="_blank">百度网盘下载</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-widescreen">
+            <div class="rows">
+                <div class="rows is-centered ">
+                    <div class="row is-full-width">
+                        <h2 class="title is-2">
+                            <a href="https://github.com/DxrData/dxr_autodriving.git" target="_blank" class="dvima" style="font-size: inherit; color: inherit; text-decoration: none;">
+                                自动驾驶数据采集 <i class="fas fa-link" style="font-size: 16px; color: #007bff;"></i>
+                            </a>
+                        </h2>
+                    </div>
+                    <br>
+                    <div class="columns">
+                        <div class="column has-text-centered">
+                            <img src="figures/自动驾驶.jpg" class="interpolation-image" alt=""
+                            style="display: block; width: 80%; margin-left: auto; margin-right: auto" />
+                    </div>    
+                    <!-- <br> -->
+                    <div class="column has-text-centered">
+                    <span style="font-size: 140%">
+                        自动驾驶数据采集依赖于摄像头、激光雷达、毫米波雷达等传感器，实时获取道路环境和车辆状态信息，涵盖车辆、行人、路标等元素。采集系统采用高精度传感器，支持模块化配置，通过5G等技术将数据实时回传至云端或服务器。数据还需经过清洗和标注等预处理，以确保其质量和可用性，为自动驾驶算法训练和优化提供基础支持。
+                    </span>
+                </div>
+            </div>
+                <!-- 视频展示区域 -->
+                <div class="columns">
+                    <div class="column">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="videos/xarm_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="column">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="videos/xarm_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="column">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="videos/xarm_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="videos/xarm_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="column">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="videos/xarm_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="column">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="videos/xarm_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="rows" style="margin-top: -0.5rem; margin-bottom: -0.5rem;">
+                    <div class="columns is-multiline">
+                        <div class="column is-full" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
+                            <a href="https://github.com/your_github_repo" target="_blank">GitHub 下载</a>
+                        </div>
+                        <div class="column is-full" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
+                            <a href="https://pan.baidu.com/your_baidu_pan_link" target="_blank">百度网盘下载</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+    </section>
+    <section class="section">
+        <div class="container is-max-widescreen">
+            <div class="rows">
+                <div class="rows is-centered ">
+                    <div class="row is-full-width">
+                        <h2 class="title is-2">
+                            <a href="https://github.com/DxrData/dxr_vision.git" target="_blank" class="dvima" style="font-size: inherit; color: inherit; text-decoration: none;">
+                                视觉感知数据采集 <i class="fas fa-link" style="font-size: 16px; color: #007bff;"></i>
+                            </a>
+                        </h2>
+                    </div>
+                    <br>
+                    <div class="columns">
+                        <div class="column has-text-centered">
+                            <img src="figures/视觉感知.jpg" class="interpolation-image" alt=""
+                            style="display: block; width: 80%; margin-left: auto; margin-right: auto" />
+                        </div>    
+                    <!-- <br> -->
+                    <div class="column has-text-centered">
+                    <span style="font-size: 140%">
+                        图像领域数据采集是计算机视觉发展的基石。通过高清摄像头、无人机、卫星等设备，从自然景观、城市街景到医疗影像等多场景获取海量图像数据。采集后，数据需经过标注、清洗等预处理，以确保高质量。这些数据用于训练图像识别、分割、检测等模型，提升算法性能，广泛应用于自动驾驶、安防监控、医疗诊断等领域，推动智能化发展。
+                    </span>
+                </div>
+                    </div>
+                    <!-- 视频展示区域 -->
+                <div class="columns">
+                    <div class="column">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="videos/xarm_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="column">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="videos/xarm_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="column">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="videos/xarm_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="videos/xarm_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="column">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="videos/xarm_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="column">
+                        <video controls style="width: 100%; height: auto;">
+                            <source src="videos/xarm_demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="rows" style="margin-top: -0.5rem; margin-bottom: -0.5rem;">
+                    <div class="columns is-multiline">
+                        <div class="column is-full" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
+                            <a href="https://github.com/your_github_repo" target="_blank">GitHub 下载</a>
+                        </div>
+                        <div class="column is-full" style="padding-top: 0.5rem; padding-bottom: 0.5rem;">
+                            <a href="https://pan.baidu.com/your_baidu_pan_link" target="_blank">百度网盘下载</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- 
+    <section class="section">
+        <div class="container is-max-widescreen">
+            <div class="rows">
+                <div class="rows is-centered ">
+                    <div class="row is-full-width">
+                        <h2 class="title is-2"><span class="dvima">DXR Dataset Analysis</span></h2>
+                    </div>
+                    <br>
+                    <div class="columns">
+                        <div class="column has-text-centered">
+                            <img src="figures/droid_viewpoint_distribution.png" class="interpolation-image" alt=""
+                        style="display: block; width: 100%; margin-left: auto; margin-right: auto" />
+                        <br>
+                        <span style="font-size: 125%">
+                            <span style="font-weight: bold">Third-person camera viewpoints in DROID (subsampled).</span>
+                            DROID episodes cover a total of 1417 camera viewpoints along
+                            with intrinsic and extrinsic stereo camera calibration. Brighter colors
+                            indicate regions of higher viewpoint density.
+                        </span> 
+                        </div>
+                        <div class="column has-text-centered">
+                            <img src="figures/droid_interaction_points.png" class="interpolation-image" alt=""
+                            style="display: block; width: 100%; margin-left: auto; margin-right: auto" />
+
+                            <span style="font-size: 125%">
+                                <span style="font-weight: bold">Visualization of 3D interaction points relative to the robot
+                                    base.</span>
+                                    We visualize the 3D location at which the gripper first closes in
+                                    each trajectory, since closing the gripper often indicates meaningful
+                                    object interactions. DROID’s interactions cover a larger part of the
+                                    robot’s workspace, since the robot is moved freely between collection
+                                    sessions instead of being placed in front of repetitive tabletop scenes.
+                            </span>
+                        </div>
+                    </div> -->
+                    <!-- <img src="figures/droid_viewpoint_distribution.png" class="interpolation-image" alt=""
+                    style="display: block; width: 60%; margin-left: auto; margin-right: auto" />
+                    <br>
+                    <span style="font-size: 125%">
+                        <span style="font-weight: bold">Third-person camera viewpoints in DROID (subsampled).</span>
+                        DROID episodes cover a total of 1417 camera viewpoints along
+                        with intrinsic and extrinsic stereo camera calibration. Brighter colors
+                        indicate regions of higher viewpoint density.
+                    </span>
+                    <br>
+                    <br>
+                    <img src="figures/droid_interaction_points.png" class="interpolation-image" alt=""
+                    style="display: block; width: 60%; margin-left: auto; margin-right: auto" />
+                    <br>
+                    <span style="font-size: 125%">
+                        <span style="font-weight: bold">Visualization of 3D interaction points relative to the robot
+                            base.</span>
+                            We visualize the 3D location at which the gripper first closes in
+                            each trajectory, since closing the gripper often indicates meaningful
+                            object interactions. DROID’s interactions cover a larger part of the
+                            robot’s workspace, since the robot is moved freely between collection
+                            sessions instead of being placed in front of repetitive tabletop scenes.
+                    </span>
+                    <br>
+                    <br> -->
+                    <!-- <img src="figures/scene_distribution.png" class="interpolation-image" alt=""
+                    style="display: block; width: 50%; margin-left: auto; margin-right: auto" />
+                    <br>
+                    <span style="font-size: 125%">
+                        <span style="font-weight: bold">Number of scenes per scene type.</span> DROID has an order of
+                        magnitude more scenes than other large robot manipulation datasets,
+                        spanning a much wider range of scene types. 
+                    </span>
+                    <br> -->
+                    <!-- <div class="container">
+                        <div id="results-carousel" class="carousel results-carousel">
+                            <div class="item">
+                                <video poster="" id="" autoplay controls muted loop height="200%" playbackRate=2.0>
+                                    <source src="videos/droid_scene_videos/scene_type_bathroom_video_width_240_fps_10_duration_20.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="item">
+                                <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>
+                                    <source src="videos/droid_scene_videos/scene_type_bedroom_video_width_240_fps_10_duration_20.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="item">
+                                <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>
+                                    <source src="videos/droid_scene_videos/scene_type_closet_video_width_240_fps_10_duration_20.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="item">
+                                <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>
+                                    <source src="videos/droid_scene_videos/scene_type_dining_room_video_width_240_fps_10_duration_20.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="item">
+                                <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>
+                                    <source src="videos/droid_scene_videos/scene_type_industrial_office_video_width_240_fps_10_duration_20.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="item">
+                                <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>
+                                    <source src="videos/droid_scene_videos/scene_type_kitchen_video_width_240_fps_10_duration_20.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="item">
+                                <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>
+                                    <source src="videos/droid_scene_videos/scene_type_laboratory_video_width_240_fps_10_duration_20.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="item">
+                                <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>
+                                    <source src="videos/droid_scene_videos/scene_type_laundry_video_width_240_fps_10_duration_20.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="item">
+                                <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>
+                                    <source src="videos/droid_scene_videos/scene_type_living_room_video_width_240_fps_10_duration_20.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div> -->
+                    <!-- </div>
+                    <br>
+                    <img src="figures/droid_verb_objects_highres.png" class="interpolation-image" alt=""
+                    style="display: block; width: 100%; margin-left: auto; margin-right: auto" />
+                    <br>
+                    <span style="font-size: 125%">
+                        <span style="font-weight: bold">Distribution of verbs and objects in DROID</span>
+                        <b>Top:</b> Distribution of skills in DROID.
+                        DROID features a long tail of diverse verb classes that is only matched by Bridge V2, while the RH20T and RT-1
+                        datasets have a more constrained set of skills.
+                         <b>Bottom</b>: Distribution of interacted objects in DROID, grouped by category. The robot interacts with a wide range of everyday objects.
+                    </span> -->
+                    <!-- <br>
+                    <br>
+                    <img src="figures/object_distribution.png" class="interpolation-image" alt=""
+                    style="display: block; width: 90%; margin-left: auto; margin-right: auto" />
+                    <br>
+                    <span style="font-size: 125%">
+                        <span style="font-weight: bold">Distribution of interacted objects in DROID,</span> grouped by category. The robot interacts with a wide range of everyday objects.
+                    </span>
+                    <br>
+                    <br>
+                    <img src="figures/verb_distributions.png" class="interpolation-image" alt=""
+                    style="display: block; width: 90%; margin-left: auto; margin-right: auto" />
+                    <br>
+                    <span style="font-size: 125%">
+                        <span style="font-weight: bold">Distribution of skills in DROID.</span>
+                        DROID features a long tail of diverse verb classes that is only matched by Bridge V2, while the RH20T and RT-1
+                        datasets have a more constrained set of skills.
+                    </span> -->
+                <!-- </div>
+            </div>
+        </div>
+    </section> -->
+
+
+<!-- 
+</script>
+
+</html>
